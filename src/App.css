@@ -1,0 +1,144 @@
+
+.app {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.app h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+/* Game Board */
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 20px auto 30px;
+}
+
+.row {
+  display: flex;
+  gap: 6px;
+}
+
+.tile {
+  width: 55px;
+  height: 55px;
+  border: 2px solid #565758;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Tile Colors */
+
+.correct {
+  background-color: #538d4e !important;
+  border-color: #538d4e !important;
+  color: white;
+}
+
+.present {
+  background-color: #b59f3b !important;
+  border-color: #b59f3b !important;
+  color: white;
+}
+
+.absent {
+  background-color: #3a3a3c !important;
+  border-color: #3a3a3c !important;
+  color: white;
+}
+
+/* Virtual Keyboard */
+
+.keyboard {
+  margin: 25px auto;
+  max-width: 520px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.key {
+  min-width: 35px;
+  height: 52px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #818384;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.key:active {
+  transform: scale(0.95);
+}
+
+.message {
+  color: #f0d66b;
+  font-weight: bold;
+}
+
+/* Game Over */
+
+.game-over {
+  margin: 25px auto;
+  padding: 20px;
+  max-width: 350px;
+  background-color: #292929;
+  border-radius: 10px;
+}
+
+.game-over button {
+  background-color: #538d4e;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.game-over button:hover {
+  background-color: #416f3d;
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+  .tile {
+    width: 48px;
+    height: 48px;
+  }
+
+  .key {
+    min-width: 25px;
+    padding: 0 6px;
+    height: 45px;
+    font-size: 12px;
+  }
+
+  .app h1 {
+    font-size: 32px;
+  }
+}
